@@ -88,6 +88,9 @@
 		<Unit filename="/home/jake/NEA/include/Font.h">
 			<Option target="NEA"/>
 		</Unit>
+		<Unit filename="/home/jake/NEA/include/Glyph.h">
+			<Option target="NEA"/>
+		</Unit>
 		<Unit filename="/home/jake/NEA/include/HEADTable.h">
 			<Option target="NEA"/>
 		</Unit>
@@ -104,6 +107,9 @@
 			<Option target="NEA"/>
 		</Unit>
 		<Unit filename="/home/jake/NEA/src/Font.cpp">
+			<Option target="NEA"/>
+		</Unit>
+		<Unit filename="/home/jake/NEA/src/Glyph.cpp">
 			<Option target="NEA"/>
 		</Unit>
 		<Unit filename="/home/jake/NEA/src/HEADTable.cpp">

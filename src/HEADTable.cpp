@@ -22,6 +22,7 @@ void HEADTable::parse(std::vector<uint8_t> *data, int offset, int length) {
     xMax = parse16(data, offset+40);
     yMax = parse16(data, offset+42);
 
+    indexToLocFormat = (bool) parseu16(data, offset+50);
     // Most of the rest of HEAD is kinda irrelevant, checksum, various other properties don't really matter
 }
 

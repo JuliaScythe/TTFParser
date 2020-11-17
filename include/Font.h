@@ -13,10 +13,9 @@
 class Font {
 public:
     Font();
-    Font(std::string filename);
+    Font(std::string filename, char characterToGet);
     ~Font();
 
-    void parse();
 private:
 
     void readFont(std::string filename);
@@ -30,8 +29,11 @@ private:
     HEADTable head;
     CMAPTable cmap;
 
-
+    char characterToGet;
+    uint32_t glyphOffset;
+    uint32_t glyphLength;
 };
 
+std::pair<uint32_t, uint32_t> getGlyphOffset(std::vector<uint8_t>* data, Header header, HEADTable head, uint16_t glyphIndex);
 
 #endif //NEA_FONT_H

@@ -24,6 +24,7 @@ public:
     int16_t yMin;
     int16_t yMax;
 
+    bool indexToLocFormat;
 };
 
 

@@ -177,6 +177,33 @@ src/Font.cpp.s:
 	$(MAKE) -f CMakeFiles/NEA.dir/build.make CMakeFiles/NEA.dir/src/Font.cpp.s
 .PHONY : src/Font.cpp.s
 
+src/Glyph.o: src/Glyph.cpp.o
+
+.PHONY : src/Glyph.o
+
+# target to build an object file
+src/Glyph.cpp.o:
+	$(MAKE) -f CMakeFiles/NEA.dir/build.make CMakeFiles/NEA.dir/src/Glyph.cpp.o
+.PHONY : src/Glyph.cpp.o
+
+src/Glyph.i: src/Glyph.cpp.i
+
+.PHONY : src/Glyph.i
+
+# target to preprocess a source file
+src/Glyph.cpp.i:
+	$(MAKE) -f CMakeFiles/NEA.dir/build.make CMakeFiles/NEA.dir/src/Glyph.cpp.i
+.PHONY : src/Glyph.cpp.i
+
+src/Glyph.s: src/Glyph.cpp.s
+
+.PHONY : src/Glyph.s
+
+# target to generate assembly for a file
+src/Glyph.cpp.s:
+	$(MAKE) -f CMakeFiles/NEA.dir/build.make CMakeFiles/NEA.dir/src/Glyph.cpp.s
+.PHONY : src/Glyph.cpp.s
+
 src/HEADTable.o: src/HEADTable.cpp.o
 
 .PHONY : src/HEADTable.o
@@ -327,6 +354,9 @@ help:
 	@echo "... src/Font.o"
 	@echo "... src/Font.i"
 	@echo "... src/Font.s"
+	@echo "... src/Glyph.o"
+	@echo "... src/Glyph.i"
+	@echo "... src/Glyph.s"
 	@echo "... src/HEADTable.o"
 	@echo "... src/HEADTable.i"
 	@echo "... src/HEADTable.s"

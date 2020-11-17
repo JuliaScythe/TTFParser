@@ -13,9 +13,14 @@ class CMAPTable {
 public:
     CMAPTable();
 
-    CMAPTable(std::vector<uint8_t> *data, Header header);
+    CMAPTable(std::vector<uint8_t> *data, Header header, char characterToGet);
 
-    void parse(std::vector<uint8_t> *data, int offset, int length);
+    void parse(std::vector<uint8_t> *data, int offset, int length, char characterToGet);
+
+    uint16_t glyphIndex;
+
+private:
+    void parseSubtableType4(std::vector<uint8_t> *data, int offset, char characterToMap);
 };
 
 

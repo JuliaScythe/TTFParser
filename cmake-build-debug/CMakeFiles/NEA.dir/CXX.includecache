@@ -14,6 +14,26 @@ cstdint
 Header.h
 /home/jake/NEA/include/Header.h
 
+/home/jake/NEA/include/Font.h
+string
+-
+vector
+-
+Header.h
+/home/jake/NEA/include/Header.h
+HEADTable.h
+/home/jake/NEA/include/HEADTable.h
+CMAPTable.h
+/home/jake/NEA/include/CMAPTable.h
+
+/home/jake/NEA/include/HEADTable.h
+vector
+-
+cstdint
+-
+Header.h
+/home/jake/NEA/include/Header.h
+
 /home/jake/NEA/include/Header.h
 vector
 -
@@ -47,4 +67,20 @@ string
 /home/jake/NEA/include/CMAPTable.h
 ../include/util.h
 /home/jake/NEA/include/util.h
+
+/home/jake/NEA/src/Font.cpp
+fstream
+-
+filesystem
+-
+iostream
+-
+../include/Font.h
+/home/jake/NEA/include/Font.h
+
+/home/jake/NEA/src/main.cpp
+iostream
+-
+../include/Font.h
+/home/jake/NEA/include/Font.h
 
