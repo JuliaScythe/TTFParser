@@ -41,7 +41,7 @@ uint8_t parseu8(std::vector<uint8_t> *data, int offset) {
 int16_t parse16(std::vector<uint8_t> *data, int offset) {
     auto val = (uint16_t) data->at(offset);
     val <<= 8;
-    val += data->at(offset+11);
+    val += data->at(offset+1);
 
     int16_t result;
     std::memcpy(&result, &val, 2); // Copy two bytes of memory from val -> result

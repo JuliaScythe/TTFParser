@@ -9,6 +9,7 @@
 #include "Header.h"
 #include "HEADTable.h"
 #include "CMAPTable.h"
+#include "Glyph.h"
 
 class Font {
 public:
@@ -28,6 +29,8 @@ private:
     Header header;
     HEADTable head;
     CMAPTable cmap;
+
+    Glyph glyph;
 
     char characterToGet;
     uint32_t glyphOffset;

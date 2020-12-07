@@ -31,6 +31,11 @@ void Font::readFont(std::string filename) {
     auto glyphOffsetAndLength = getGlyphOffset(data, header, head, cmap.glyphIndex);
     glyphOffset = glyphOffsetAndLength.first;
     glyphLength = glyphOffsetAndLength.second;
+
+    // And now we need to actually parse the glyph!
+    glyph = Glyph(data, glyphOffset, glyphLength);
+
+
 }
 
 // Mixing levels of abstraction = bad, I know, but parsing the loca table is too trivial to get it's own class imo
@@ -38,11 +43,12 @@ std::pair<uint32_t, uint32_t> getGlyphOffset(std::vector<uint8_t> *data, Header 
     // Find the offset of the loca table
     uint32_t offset = header.tables["loca"].tableOffset;
 
-    // Find the number of glyphs in the font
-    uint16_t numGlyphs = parseu16(data, header.tables["maxp"].tableOffset+4);
 
-    uint16_t glyphPointerMultiplier = head.indexToLocFormat ? 2 : 1; // WHYYYYYY
-    uint16_t glyphPointerSize = head.indexToLocFormat ? 2 : 4;
+    // Find the number of glyphs in the font
+    // uint16_t numGlyphs = parseu16(data, header.tables["maxp"].tableOffset+4);
+
+    uint16_t glyphPointerMultiplier = head.indexToLocFormat ? 1 : 2; // WHYYYYYY
+    uint16_t glyphPointerSize = head.indexToLocFormat ? 4 : 2;
 
     uint16_t locaOffset = offset + glyphIndex*glyphPointerSize;
 
@@ -59,9 +65,11 @@ std::pair<uint32_t, uint32_t> getGlyphOffset(std::vector<uint8_t> *data, Header 
     }
 
     glyphOffset *= glyphPointerMultiplier;
-    glyphOffset += header.tables["glyf"].tableOffset;
+    nextGlyphOffset *= glyphPointerMultiplier;
 
     uint32_t length = nextGlyphOffset - glyphOffset;
+
+    glyphOffset += header.tables["glyf"].tableOffset;
 
     // huh okay that was less trivial than I expected
     return std::pair(glyphOffset, length);

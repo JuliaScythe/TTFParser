@@ -27,6 +27,16 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jake/NEA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/jake/NEA/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jake/NEA/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jake/NEA/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jake/NEA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jake/NEA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="NEA">
 				<Option output="/home/jake/NEA/cmake-build-debug/NEA" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/jake/NEA/cmake-build-debug"/>
@@ -71,16 +81,6 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jake/NEA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/home/jake/NEA/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jake/NEA/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jake/NEA/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jake/NEA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jake/NEA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 		</Build>
 		<Unit filename="/home/jake/NEA/include/CMAPTable.h">
 			<Option target="NEA"/>
@@ -95,6 +95,15 @@
 			<Option target="NEA"/>
 		</Unit>
 		<Unit filename="/home/jake/NEA/include/Header.h">
+			<Option target="NEA"/>
+		</Unit>
+		<Unit filename="/home/jake/NEA/include/Point.h">
+			<Option target="NEA"/>
+		</Unit>
+		<Unit filename="/home/jake/NEA/include/PointFlag.cpp">
+			<Option target="NEA"/>
+		</Unit>
+		<Unit filename="/home/jake/NEA/include/PointFlag.h">
 			<Option target="NEA"/>
 		</Unit>
 		<Unit filename="/home/jake/NEA/include/TableHeader.h">
@@ -116,6 +125,9 @@
 			<Option target="NEA"/>
 		</Unit>
 		<Unit filename="/home/jake/NEA/src/Header.cpp">
+			<Option target="NEA"/>
+		</Unit>
+		<Unit filename="/home/jake/NEA/src/Point.cpp">
 			<Option target="NEA"/>
 		</Unit>
 		<Unit filename="/home/jake/NEA/src/TableHeader.cpp">
