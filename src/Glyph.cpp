@@ -47,7 +47,8 @@ void Glyph::parse(std::vector<uint8_t> *data, uint32_t offset, uint32_t length) 
     uint16_t numberOfXValues = 0;
     uint16_t numberOfYValues = 0;
     std::vector<PointFlag> flags = {};
-    std::vector<Point> points = {};
+    std::vector<int16_t> xDeltas = {};
+    std::vector<int16_t> yDeltas = {};
 
     // THE BIGGER ALGORITHM
 
@@ -84,14 +85,12 @@ void Glyph::parse(std::vector<uint8_t> *data, uint32_t offset, uint32_t length) 
 
         }
 
-        // Create the point
-        points.emplace_back(xDelta, 0, flag); // DeltaY will be added below.
+        xDeltas.emplace_back(xDelta);
         // Update lastX
         lastX = xDelta;
     }
     // This might just be valid!
 
-/*
     // Parse the Y values
     for(auto flag : flags) {
         int16_t yDelta;
@@ -112,10 +111,15 @@ void Glyph::parse(std::vector<uint8_t> *data, uint32_t offset, uint32_t length) 
 
         }
 
-        // Create the point
-        // FIXME: points.emplace_back(yDelta, 0, flag); // DeltaY will be added below.
-        // Update lastX
-        lastX = xDelta;
+        yDeltas.emplace_back(yDelta);
+        // Update lastY
+        lastY = yDelta;
     }
-*/
+
+    std::vector<Point> points = {};
+    for(int i = 0; i < xDeltas.size(); i++) {
+        points.emplace_back(xDeltas[i], yDeltas[i], flags[i]);
+    }
+
+    int x=0;
 }
