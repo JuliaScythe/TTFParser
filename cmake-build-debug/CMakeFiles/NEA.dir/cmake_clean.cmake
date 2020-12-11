@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/NEA.dir/SDL_gfx/SDL2_gfxPrimitives.c.o"
+  "CMakeFiles/NEA.dir/SDL_gfx/SDL2_rotozoom.c.o"
   "CMakeFiles/NEA.dir/include/PointFlag.cpp.o"
   "CMakeFiles/NEA.dir/src/CMAPTable.cpp.o"
   "CMakeFiles/NEA.dir/src/Font.cpp.o"
@@ -14,6 +16,6 @@ file(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang CXX)
+foreach(lang C CXX)
   include(CMakeFiles/NEA.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()

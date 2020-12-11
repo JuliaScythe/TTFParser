@@ -17,6 +17,7 @@ public:
     Font(std::string filename, char characterToGet);
     ~Font();
 
+    Glyph glyph;
 private:
 
     void readFont(std::string filename);
@@ -29,8 +30,6 @@ private:
     Header header;
     HEADTable head;
     CMAPTable cmap;
-
-    Glyph glyph;
 
     char characterToGet;
     uint32_t glyphOffset;

@@ -4,10 +4,8 @@
 
 #include "../include/Glyph.h"
 #include "../include/util.h"
-#include "../include/PointFlag.h"
-#include "../include/Point.h"
 
-Glyph::Glyph(std::vector<uint8_t> *data, uint32_t offset, uint32_t length) {
+Glyph::Glyph(std::vector<uint8_t> *data, uint32_t offset, uint32_t length) : points() {
     parse(data, offset, length);
 }
 
@@ -116,10 +114,9 @@ void Glyph::parse(std::vector<uint8_t> *data, uint32_t offset, uint32_t length) 
         lastY = yDelta;
     }
 
-    std::vector<Point> points = {};
     for(int i = 0; i < xDeltas.size(); i++) {
         points.emplace_back(xDeltas[i], yDeltas[i], flags[i]);
     }
 
-    int x=0;
+
 }

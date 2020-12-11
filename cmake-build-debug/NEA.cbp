@@ -5,7 +5,7 @@
 		<Option title="NEA"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\usr\;CMake Files\..\..\..\usr\lib64\;CMake Files\..\..\..\usr\lib64\cmake\;CMake Files\..\..\..\usr\lib64\cmake\SDL2\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/jake/NEA/cmake-build-debug"/>
@@ -82,6 +82,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/jake/NEA/SDL_gfx/SDL2_gfxPrimitives.c">
+			<Option target="NEA"/>
+		</Unit>
+		<Unit filename="/home/jake/NEA/SDL_gfx/SDL2_gfxPrimitives.h">
+			<Option target="NEA"/>
+		</Unit>
+		<Unit filename="/home/jake/NEA/SDL_gfx/SDL2_rotozoom.c">
+			<Option target="NEA"/>
+		</Unit>
+		<Unit filename="/home/jake/NEA/SDL_gfx/SDL2_rotozoom.h">
+			<Option target="NEA"/>
+		</Unit>
 		<Unit filename="/home/jake/NEA/include/CMAPTable.h">
 			<Option target="NEA"/>
 		</Unit>
@@ -141,6 +153,18 @@
 		</Unit>
 		<Unit filename="/home/jake/NEA/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/jake/NEA/../../../usr/lib64/cmake/SDL2/SDL2Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib64\cmake\SDL2\"/>
+		</Unit>
+		<Unit filename="/home/jake/NEA/../../../usr/lib64/cmake/SDL2/SDL2ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib64\cmake\SDL2\"/>
+		</Unit>
+		<Unit filename="/home/jake/NEA/../../../usr/lib64/cmake/SDL2/SDL2Targets-noconfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib64\cmake\SDL2\"/>
+		</Unit>
+		<Unit filename="/home/jake/NEA/../../../usr/lib64/cmake/SDL2/SDL2Targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib64\cmake\SDL2\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

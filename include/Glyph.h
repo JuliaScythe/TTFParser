@@ -7,6 +7,7 @@
 
 #include <cstdint>
 #include <vector>
+#include "Point.h"
 
 class Glyph {
 public:
@@ -24,6 +25,7 @@ public:
     std::vector<uint16_t> endPointsOfContours;
     uint16_t instructionLength;
 
+    std::vector<Point> points;
 
 };
 

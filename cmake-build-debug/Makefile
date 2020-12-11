@@ -143,6 +143,60 @@ NEA/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NEA.dir/build.make CMakeFiles/NEA.dir/build
 .PHONY : NEA/fast
 
+SDL_gfx/SDL2_gfxPrimitives.o: SDL_gfx/SDL2_gfxPrimitives.c.o
+
+.PHONY : SDL_gfx/SDL2_gfxPrimitives.o
+
+# target to build an object file
+SDL_gfx/SDL2_gfxPrimitives.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NEA.dir/build.make CMakeFiles/NEA.dir/SDL_gfx/SDL2_gfxPrimitives.c.o
+.PHONY : SDL_gfx/SDL2_gfxPrimitives.c.o
+
+SDL_gfx/SDL2_gfxPrimitives.i: SDL_gfx/SDL2_gfxPrimitives.c.i
+
+.PHONY : SDL_gfx/SDL2_gfxPrimitives.i
+
+# target to preprocess a source file
+SDL_gfx/SDL2_gfxPrimitives.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NEA.dir/build.make CMakeFiles/NEA.dir/SDL_gfx/SDL2_gfxPrimitives.c.i
+.PHONY : SDL_gfx/SDL2_gfxPrimitives.c.i
+
+SDL_gfx/SDL2_gfxPrimitives.s: SDL_gfx/SDL2_gfxPrimitives.c.s
+
+.PHONY : SDL_gfx/SDL2_gfxPrimitives.s
+
+# target to generate assembly for a file
+SDL_gfx/SDL2_gfxPrimitives.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NEA.dir/build.make CMakeFiles/NEA.dir/SDL_gfx/SDL2_gfxPrimitives.c.s
+.PHONY : SDL_gfx/SDL2_gfxPrimitives.c.s
+
+SDL_gfx/SDL2_rotozoom.o: SDL_gfx/SDL2_rotozoom.c.o
+
+.PHONY : SDL_gfx/SDL2_rotozoom.o
+
+# target to build an object file
+SDL_gfx/SDL2_rotozoom.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NEA.dir/build.make CMakeFiles/NEA.dir/SDL_gfx/SDL2_rotozoom.c.o
+.PHONY : SDL_gfx/SDL2_rotozoom.c.o
+
+SDL_gfx/SDL2_rotozoom.i: SDL_gfx/SDL2_rotozoom.c.i
+
+.PHONY : SDL_gfx/SDL2_rotozoom.i
+
+# target to preprocess a source file
+SDL_gfx/SDL2_rotozoom.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NEA.dir/build.make CMakeFiles/NEA.dir/SDL_gfx/SDL2_rotozoom.c.i
+.PHONY : SDL_gfx/SDL2_rotozoom.c.i
+
+SDL_gfx/SDL2_rotozoom.s: SDL_gfx/SDL2_rotozoom.c.s
+
+.PHONY : SDL_gfx/SDL2_rotozoom.s
+
+# target to generate assembly for a file
+SDL_gfx/SDL2_rotozoom.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NEA.dir/build.make CMakeFiles/NEA.dir/SDL_gfx/SDL2_rotozoom.c.s
+.PHONY : SDL_gfx/SDL2_rotozoom.c.s
+
 include/PointFlag.o: include/PointFlag.cpp.o
 
 .PHONY : include/PointFlag.o
@@ -422,6 +476,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... NEA"
+	@echo "... SDL_gfx/SDL2_gfxPrimitives.o"
+	@echo "... SDL_gfx/SDL2_gfxPrimitives.i"
+	@echo "... SDL_gfx/SDL2_gfxPrimitives.s"
+	@echo "... SDL_gfx/SDL2_rotozoom.o"
+	@echo "... SDL_gfx/SDL2_rotozoom.i"
+	@echo "... SDL_gfx/SDL2_rotozoom.s"
 	@echo "... include/PointFlag.o"
 	@echo "... include/PointFlag.i"
 	@echo "... include/PointFlag.s"

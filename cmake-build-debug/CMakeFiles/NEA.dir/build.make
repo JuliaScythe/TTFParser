@@ -77,9 +77,22 @@ include CMakeFiles/NEA.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/NEA.dir/flags.make
 
+CMakeFiles/NEA.dir/SDL_gfx/SDL2_gfxPrimitives.c.o: CMakeFiles/NEA.dir/flags.make
+CMakeFiles/NEA.dir/SDL_gfx/SDL2_gfxPrimitives.c.o: ../SDL_gfx/SDL2_gfxPrimitives.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jake/NEA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/NEA.dir/SDL_gfx/SDL2_gfxPrimitives.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/NEA.dir/SDL_gfx/SDL2_gfxPrimitives.c.o   -c /home/jake/NEA/SDL_gfx/SDL2_gfxPrimitives.c
+
+CMakeFiles/NEA.dir/SDL_gfx/SDL2_gfxPrimitives.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/NEA.dir/SDL_gfx/SDL2_gfxPrimitives.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jake/NEA/SDL_gfx/SDL2_gfxPrimitives.c > CMakeFiles/NEA.dir/SDL_gfx/SDL2_gfxPrimitives.c.i
+
+CMakeFiles/NEA.dir/SDL_gfx/SDL2_gfxPrimitives.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/NEA.dir/SDL_gfx/SDL2_gfxPrimitives.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jake/NEA/SDL_gfx/SDL2_gfxPrimitives.c -o CMakeFiles/NEA.dir/SDL_gfx/SDL2_gfxPrimitives.c.s
+
 CMakeFiles/NEA.dir/src/main.cpp.o: CMakeFiles/NEA.dir/flags.make
 CMakeFiles/NEA.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jake/NEA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/NEA.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jake/NEA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/NEA.dir/src/main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/NEA.dir/src/main.cpp.o -c /home/jake/NEA/src/main.cpp
 
 CMakeFiles/NEA.dir/src/main.cpp.i: cmake_force
@@ -92,7 +105,7 @@ CMakeFiles/NEA.dir/src/main.cpp.s: cmake_force
 
 CMakeFiles/NEA.dir/src/Font.cpp.o: CMakeFiles/NEA.dir/flags.make
 CMakeFiles/NEA.dir/src/Font.cpp.o: ../src/Font.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jake/NEA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/NEA.dir/src/Font.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jake/NEA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/NEA.dir/src/Font.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/NEA.dir/src/Font.cpp.o -c /home/jake/NEA/src/Font.cpp
 
 CMakeFiles/NEA.dir/src/Font.cpp.i: cmake_force
@@ -105,7 +118,7 @@ CMakeFiles/NEA.dir/src/Font.cpp.s: cmake_force
 
 CMakeFiles/NEA.dir/src/Header.cpp.o: CMakeFiles/NEA.dir/flags.make
 CMakeFiles/NEA.dir/src/Header.cpp.o: ../src/Header.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jake/NEA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/NEA.dir/src/Header.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jake/NEA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/NEA.dir/src/Header.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/NEA.dir/src/Header.cpp.o -c /home/jake/NEA/src/Header.cpp
 
 CMakeFiles/NEA.dir/src/Header.cpp.i: cmake_force
@@ -118,7 +131,7 @@ CMakeFiles/NEA.dir/src/Header.cpp.s: cmake_force
 
 CMakeFiles/NEA.dir/src/util.cpp.o: CMakeFiles/NEA.dir/flags.make
 CMakeFiles/NEA.dir/src/util.cpp.o: ../src/util.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jake/NEA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/NEA.dir/src/util.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jake/NEA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/NEA.dir/src/util.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/NEA.dir/src/util.cpp.o -c /home/jake/NEA/src/util.cpp
 
 CMakeFiles/NEA.dir/src/util.cpp.i: cmake_force
@@ -131,7 +144,7 @@ CMakeFiles/NEA.dir/src/util.cpp.s: cmake_force
 
 CMakeFiles/NEA.dir/src/TableHeader.cpp.o: CMakeFiles/NEA.dir/flags.make
 CMakeFiles/NEA.dir/src/TableHeader.cpp.o: ../src/TableHeader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jake/NEA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/NEA.dir/src/TableHeader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jake/NEA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/NEA.dir/src/TableHeader.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/NEA.dir/src/TableHeader.cpp.o -c /home/jake/NEA/src/TableHeader.cpp
 
 CMakeFiles/NEA.dir/src/TableHeader.cpp.i: cmake_force
@@ -144,7 +157,7 @@ CMakeFiles/NEA.dir/src/TableHeader.cpp.s: cmake_force
 
 CMakeFiles/NEA.dir/src/HEADTable.cpp.o: CMakeFiles/NEA.dir/flags.make
 CMakeFiles/NEA.dir/src/HEADTable.cpp.o: ../src/HEADTable.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jake/NEA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/NEA.dir/src/HEADTable.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jake/NEA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/NEA.dir/src/HEADTable.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/NEA.dir/src/HEADTable.cpp.o -c /home/jake/NEA/src/HEADTable.cpp
 
 CMakeFiles/NEA.dir/src/HEADTable.cpp.i: cmake_force
@@ -157,7 +170,7 @@ CMakeFiles/NEA.dir/src/HEADTable.cpp.s: cmake_force
 
 CMakeFiles/NEA.dir/src/CMAPTable.cpp.o: CMakeFiles/NEA.dir/flags.make
 CMakeFiles/NEA.dir/src/CMAPTable.cpp.o: ../src/CMAPTable.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jake/NEA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/NEA.dir/src/CMAPTable.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jake/NEA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/NEA.dir/src/CMAPTable.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/NEA.dir/src/CMAPTable.cpp.o -c /home/jake/NEA/src/CMAPTable.cpp
 
 CMakeFiles/NEA.dir/src/CMAPTable.cpp.i: cmake_force
@@ -170,7 +183,7 @@ CMakeFiles/NEA.dir/src/CMAPTable.cpp.s: cmake_force
 
 CMakeFiles/NEA.dir/src/Glyph.cpp.o: CMakeFiles/NEA.dir/flags.make
 CMakeFiles/NEA.dir/src/Glyph.cpp.o: ../src/Glyph.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jake/NEA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/NEA.dir/src/Glyph.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jake/NEA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/NEA.dir/src/Glyph.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/NEA.dir/src/Glyph.cpp.o -c /home/jake/NEA/src/Glyph.cpp
 
 CMakeFiles/NEA.dir/src/Glyph.cpp.i: cmake_force
@@ -183,7 +196,7 @@ CMakeFiles/NEA.dir/src/Glyph.cpp.s: cmake_force
 
 CMakeFiles/NEA.dir/include/PointFlag.cpp.o: CMakeFiles/NEA.dir/flags.make
 CMakeFiles/NEA.dir/include/PointFlag.cpp.o: ../include/PointFlag.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jake/NEA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/NEA.dir/include/PointFlag.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jake/NEA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/NEA.dir/include/PointFlag.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/NEA.dir/include/PointFlag.cpp.o -c /home/jake/NEA/include/PointFlag.cpp
 
 CMakeFiles/NEA.dir/include/PointFlag.cpp.i: cmake_force
@@ -196,7 +209,7 @@ CMakeFiles/NEA.dir/include/PointFlag.cpp.s: cmake_force
 
 CMakeFiles/NEA.dir/src/Point.cpp.o: CMakeFiles/NEA.dir/flags.make
 CMakeFiles/NEA.dir/src/Point.cpp.o: ../src/Point.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jake/NEA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/NEA.dir/src/Point.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jake/NEA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/NEA.dir/src/Point.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/NEA.dir/src/Point.cpp.o -c /home/jake/NEA/src/Point.cpp
 
 CMakeFiles/NEA.dir/src/Point.cpp.i: cmake_force
@@ -207,8 +220,22 @@ CMakeFiles/NEA.dir/src/Point.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NEA.dir/src/Point.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jake/NEA/src/Point.cpp -o CMakeFiles/NEA.dir/src/Point.cpp.s
 
+CMakeFiles/NEA.dir/SDL_gfx/SDL2_rotozoom.c.o: CMakeFiles/NEA.dir/flags.make
+CMakeFiles/NEA.dir/SDL_gfx/SDL2_rotozoom.c.o: ../SDL_gfx/SDL2_rotozoom.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jake/NEA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/NEA.dir/SDL_gfx/SDL2_rotozoom.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/NEA.dir/SDL_gfx/SDL2_rotozoom.c.o   -c /home/jake/NEA/SDL_gfx/SDL2_rotozoom.c
+
+CMakeFiles/NEA.dir/SDL_gfx/SDL2_rotozoom.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/NEA.dir/SDL_gfx/SDL2_rotozoom.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jake/NEA/SDL_gfx/SDL2_rotozoom.c > CMakeFiles/NEA.dir/SDL_gfx/SDL2_rotozoom.c.i
+
+CMakeFiles/NEA.dir/SDL_gfx/SDL2_rotozoom.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/NEA.dir/SDL_gfx/SDL2_rotozoom.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jake/NEA/SDL_gfx/SDL2_rotozoom.c -o CMakeFiles/NEA.dir/SDL_gfx/SDL2_rotozoom.c.s
+
 # Object files for target NEA
 NEA_OBJECTS = \
+"CMakeFiles/NEA.dir/SDL_gfx/SDL2_gfxPrimitives.c.o" \
 "CMakeFiles/NEA.dir/src/main.cpp.o" \
 "CMakeFiles/NEA.dir/src/Font.cpp.o" \
 "CMakeFiles/NEA.dir/src/Header.cpp.o" \
@@ -218,11 +245,13 @@ NEA_OBJECTS = \
 "CMakeFiles/NEA.dir/src/CMAPTable.cpp.o" \
 "CMakeFiles/NEA.dir/src/Glyph.cpp.o" \
 "CMakeFiles/NEA.dir/include/PointFlag.cpp.o" \
-"CMakeFiles/NEA.dir/src/Point.cpp.o"
+"CMakeFiles/NEA.dir/src/Point.cpp.o" \
+"CMakeFiles/NEA.dir/SDL_gfx/SDL2_rotozoom.c.o"
 
 # External object files for target NEA
 NEA_EXTERNAL_OBJECTS =
 
+NEA: CMakeFiles/NEA.dir/SDL_gfx/SDL2_gfxPrimitives.c.o
 NEA: CMakeFiles/NEA.dir/src/main.cpp.o
 NEA: CMakeFiles/NEA.dir/src/Font.cpp.o
 NEA: CMakeFiles/NEA.dir/src/Header.cpp.o
@@ -233,9 +262,11 @@ NEA: CMakeFiles/NEA.dir/src/CMAPTable.cpp.o
 NEA: CMakeFiles/NEA.dir/src/Glyph.cpp.o
 NEA: CMakeFiles/NEA.dir/include/PointFlag.cpp.o
 NEA: CMakeFiles/NEA.dir/src/Point.cpp.o
+NEA: CMakeFiles/NEA.dir/SDL_gfx/SDL2_rotozoom.c.o
 NEA: CMakeFiles/NEA.dir/build.make
+NEA: /usr/lib/libSDL2.so
 NEA: CMakeFiles/NEA.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jake/NEA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable NEA"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jake/NEA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable NEA"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/NEA.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

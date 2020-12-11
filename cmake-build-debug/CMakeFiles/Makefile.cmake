@@ -33,6 +33,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.17.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.17.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.17.3/CMakeSystem.cmake"
+  "/usr/lib64/cmake/SDL2/SDL2Config.cmake"
+  "/usr/lib64/cmake/SDL2/SDL2ConfigVersion.cmake"
+  "/usr/lib64/cmake/SDL2/SDL2Targets-noconfig.cmake"
+  "/usr/lib64/cmake/SDL2/SDL2Targets.cmake"
   )
 
 # The corresponding makefile is:
