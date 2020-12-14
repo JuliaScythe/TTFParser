@@ -22,6 +22,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/jake/NEA/src/Header.cpp" "/home/jake/NEA/cmake-build-debug/CMakeFiles/NEA.dir/src/Header.cpp.o"
   "/home/jake/NEA/src/Point.cpp" "/home/jake/NEA/cmake-build-debug/CMakeFiles/NEA.dir/src/Point.cpp.o"
   "/home/jake/NEA/src/TableHeader.cpp" "/home/jake/NEA/cmake-build-debug/CMakeFiles/NEA.dir/src/TableHeader.cpp.o"
+  "/home/jake/NEA/src/log.cpp" "/home/jake/NEA/cmake-build-debug/CMakeFiles/NEA.dir/src/log.cpp.o"
   "/home/jake/NEA/src/main.cpp" "/home/jake/NEA/cmake-build-debug/CMakeFiles/NEA.dir/src/main.cpp.o"
   "/home/jake/NEA/src/util.cpp" "/home/jake/NEA/cmake-build-debug/CMakeFiles/NEA.dir/src/util.cpp.o"
   )

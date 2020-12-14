@@ -9,6 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/NEA.dir/src/Header.cpp.o"
   "CMakeFiles/NEA.dir/src/Point.cpp.o"
   "CMakeFiles/NEA.dir/src/TableHeader.cpp.o"
+  "CMakeFiles/NEA.dir/src/log.cpp.o"
   "CMakeFiles/NEA.dir/src/main.cpp.o"
   "CMakeFiles/NEA.dir/src/util.cpp.o"
   "NEA"
