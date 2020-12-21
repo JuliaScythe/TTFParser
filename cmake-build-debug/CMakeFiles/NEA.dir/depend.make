@@ -26,6 +26,7 @@ CMakeFiles/NEA.dir/src/Font.cpp.o: ../include/Header.h
 CMakeFiles/NEA.dir/src/Font.cpp.o: ../include/Point.h
 CMakeFiles/NEA.dir/src/Font.cpp.o: ../include/PointFlag.h
 CMakeFiles/NEA.dir/src/Font.cpp.o: ../include/TableHeader.h
+CMakeFiles/NEA.dir/src/Font.cpp.o: ../include/log.h
 CMakeFiles/NEA.dir/src/Font.cpp.o: ../include/util.h
 CMakeFiles/NEA.dir/src/Font.cpp.o: ../src/Font.cpp
 
@@ -43,6 +44,7 @@ CMakeFiles/NEA.dir/src/HEADTable.cpp.o: ../src/HEADTable.cpp
 
 CMakeFiles/NEA.dir/src/Header.cpp.o: ../include/Header.h
 CMakeFiles/NEA.dir/src/Header.cpp.o: ../include/TableHeader.h
+CMakeFiles/NEA.dir/src/Header.cpp.o: ../include/log.h
 CMakeFiles/NEA.dir/src/Header.cpp.o: ../include/util.h
 CMakeFiles/NEA.dir/src/Header.cpp.o: ../src/Header.cpp
 
@@ -53,6 +55,9 @@ CMakeFiles/NEA.dir/src/Point.cpp.o: ../src/Point.cpp
 CMakeFiles/NEA.dir/src/TableHeader.cpp.o: ../include/TableHeader.h
 CMakeFiles/NEA.dir/src/TableHeader.cpp.o: ../include/util.h
 CMakeFiles/NEA.dir/src/TableHeader.cpp.o: ../src/TableHeader.cpp
+
+CMakeFiles/NEA.dir/src/log.cpp.o: ../include/log.h
+CMakeFiles/NEA.dir/src/log.cpp.o: ../src/log.cpp
 
 CMakeFiles/NEA.dir/src/main.cpp.o: ../SDL_gfx/SDL2_gfxPrimitives.h
 CMakeFiles/NEA.dir/src/main.cpp.o: ../include/CMAPTable.h

@@ -121,6 +121,9 @@
 		<Unit filename="/home/jake/NEA/include/TableHeader.h">
 			<Option target="NEA"/>
 		</Unit>
+		<Unit filename="/home/jake/NEA/include/log.h">
+			<Option target="NEA"/>
+		</Unit>
 		<Unit filename="/home/jake/NEA/include/util.h">
 			<Option target="NEA"/>
 		</Unit>
@@ -146,9 +149,6 @@
 			<Option target="NEA"/>
 		</Unit>
 		<Unit filename="/home/jake/NEA/src/log.cpp">
-			<Option target="NEA"/>
-		</Unit>
-		<Unit filename="/home/jake/NEA/src/log.h">
 			<Option target="NEA"/>
 		</Unit>
 		<Unit filename="/home/jake/NEA/src/main.cpp">

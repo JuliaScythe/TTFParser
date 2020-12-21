@@ -4,10 +4,13 @@
 
 #include "../include/HEADTable.h"
 #include "../include/util.h"
+#include "../include/log.h"
 #include <iostream>
 
 
 void HEADTable::parse(std::vector<uint8_t> *data, int offset, int length) {
+
+    info("⟶ Parsing HEAD table @ " + itoh());
 
     // Offset +16: flag word
     flags = parseu16(data, offset+16);

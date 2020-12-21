@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/jake/NEA/SDL_gfx/SDL2_gfxPrimitives.h
-math.h
--
-SDL2/SDL.h
-/home/jake/NEA/SDL_gfx/SDL2/SDL.h
-
 /home/jake/NEA/include/CMAPTable.h
 vector
 -
@@ -80,13 +74,39 @@ vector
 cstdint
 -
 
-/home/jake/NEA/src/main.cpp
+/home/jake/NEA/include/log.h
+iostream
+-
+
+/home/jake/NEA/include/util.h
+cstdint
+-
+vector
+-
+string
+-
+
+/home/jake/NEA/src/Font.cpp
+fstream
+-
+filesystem
+-
 iostream
 -
 ../include/Font.h
 /home/jake/NEA/include/Font.h
-SDL2/SDL.h
+../include/util.h
+/home/jake/NEA/include/util.h
+../include/log.h
+/home/jake/NEA/include/log.h
+
+/home/jake/NEA/src/Header.cpp
+../include/Header.h
+/home/jake/NEA/include/Header.h
+../include/util.h
+/home/jake/NEA/include/util.h
+../include/log.h
+/home/jake/NEA/include/log.h
+iostream
 -
-../SDL_gfx/SDL2_gfxPrimitives.h
-/home/jake/NEA/SDL_gfx/SDL2_gfxPrimitives.h
 

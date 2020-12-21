@@ -27,6 +27,7 @@ CMakeFiles/NEA.dir/src/Font.cpp.o
  /home/jake/NEA/include/Point.h
  /home/jake/NEA/include/PointFlag.h
  /home/jake/NEA/include/TableHeader.h
+ /home/jake/NEA/include/log.h
  /home/jake/NEA/include/util.h
  /home/jake/NEA/src/Font.cpp
 CMakeFiles/NEA.dir/src/Glyph.cpp.o
@@ -44,6 +45,7 @@ CMakeFiles/NEA.dir/src/HEADTable.cpp.o
 CMakeFiles/NEA.dir/src/Header.cpp.o
  /home/jake/NEA/include/Header.h
  /home/jake/NEA/include/TableHeader.h
+ /home/jake/NEA/include/log.h
  /home/jake/NEA/include/util.h
  /home/jake/NEA/src/Header.cpp
 CMakeFiles/NEA.dir/src/Point.cpp.o
@@ -54,6 +56,9 @@ CMakeFiles/NEA.dir/src/TableHeader.cpp.o
  /home/jake/NEA/include/TableHeader.h
  /home/jake/NEA/include/util.h
  /home/jake/NEA/src/TableHeader.cpp
+CMakeFiles/NEA.dir/src/log.cpp.o
+ /home/jake/NEA/include/log.h
+ /home/jake/NEA/src/log.cpp
 CMakeFiles/NEA.dir/src/main.cpp.o
  /home/jake/NEA/SDL_gfx/SDL2_gfxPrimitives.h
  /home/jake/NEA/include/CMAPTable.h

@@ -6,13 +6,16 @@
 #include <iostream>
 #include "../include/Font.h"
 #include "../include/util.h"
+#include "../include/log.h"
 
 Font::Font() {
 }
 
 Font::Font(std::string filename, char characterToGet) : filename(filename), characterToGet(characterToGet) {
-    readFont(filename);
+    info("Opening font: ", filename);
+    info("⟶ Looking for character: ", std::string(1, characterToGet));
 
+    readFont(filename);
 }
 
 void Font::readFont(std::string filename) {
@@ -20,6 +23,8 @@ void Font::readFont(std::string filename) {
     std::filesystem::path path = std::filesystem::path(filename); // this is valid.
     fileLength = std::filesystem::file_size(path);
     data = new std::vector<uint8_t>((std::istreambuf_iterator<char>(file)), std::istreambuf_iterator<char>());
+
+    info("⟶ Read " + std::to_string(data->size()) + " bytes.", "");
 
     // Parse the header! This is used to get the table offsets for the rest of the parsing.
     header = Header(data);
