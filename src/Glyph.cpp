@@ -4,6 +4,7 @@
 
 #include "../include/Glyph.h"
 #include "../include/util.h"
+#include "../include/log.h"
 
 Glyph::Glyph(std::vector<uint8_t> *data, uint32_t offset, uint32_t length) : points() {
     parse(data, offset, length);
@@ -15,11 +16,13 @@ Glyph::Glyph() {
 
 void Glyph::parse(std::vector<uint8_t> *data, uint32_t offset, uint32_t length) {
     // The number of contours in the glyph
-    numberOfContours = parse16(data, offset);
-    xMin = parse16(data, offset+2);
-    yMin = parse16(data, offset+4);
-    xMax = parse16(data, offset+6);
-    yMax = parse16(data, offset+8);
+    numberOfContours = parseu16(data, offset);
+    xMin = parseu16(data, offset+2);
+    yMin = parseu16(data, offset+4);
+    xMax = parseu16(data, offset+6);
+    yMax = parseu16(data, offset+8);
+
+    info("numberOfContours: ", std::to_string(numberOfContours));
 
     if (numberOfContours < 0) {
         // Compound glyph, out of the scope of the program
@@ -40,7 +43,7 @@ void Glyph::parse(std::vector<uint8_t> *data, uint32_t offset, uint32_t length) 
     uint32_t currentOffset = dataOffset;
     uint32_t remainingLength = length - (dataOffset - offset);
 
-    uint16_t totalPoints = endPointsOfContours.back();
+    uint16_t totalPoints = endPointsOfContours.back() + 1;
     uint16_t numberOfPoints = 0;
     uint16_t numberOfXValues = 0;
     uint16_t numberOfYValues = 0;
@@ -51,6 +54,7 @@ void Glyph::parse(std::vector<uint8_t> *data, uint32_t offset, uint32_t length) 
     // THE BIGGER ALGORITHM
 
     // Attempt to read each flag
+	currentOffset+=2;
     while (numberOfPoints < totalPoints) {
         flags.emplace_back(PointFlag(data, currentOffset)); // kinda cool that we can just pass stuff like this
         numberOfPoints += 1;
@@ -59,8 +63,8 @@ void Glyph::parse(std::vector<uint8_t> *data, uint32_t offset, uint32_t length) 
 
     currentOffset -= 1;
 
-    uint16_t lastX = 0;
-    uint16_t lastY = 0;
+    int16_t lastX = 0;
+    int16_t lastY = 0;
 
 
     // Parse the X values
@@ -77,11 +81,13 @@ void Glyph::parse(std::vector<uint8_t> *data, uint32_t offset, uint32_t length) 
 
         } else {
             if(!flag.xSame) {
-                currentOffset +=2;
-            }
-            xDelta = (!flag.xSame) ? parse16(data, currentOffset) : lastX;
-
-        }
+				currentOffset +=1;
+				xDelta = parse16(data, currentOffset);
+				currentOffset +=1;
+			}
+            else
+				xDelta = 0;//lastX;
+		}
 
         xDeltas.emplace_back(xDelta);
         // Update lastX
@@ -102,11 +108,13 @@ void Glyph::parse(std::vector<uint8_t> *data, uint32_t offset, uint32_t length) 
             }
 
         } else {
-            if(!flag.ySame) {
-                currentOffset +=2;
-            }
-            yDelta = (!flag.ySame) ? parse16(data, currentOffset) : lastY;
-
+			if(!flag.ySame) {
+				currentOffset +=1;
+				yDelta = parse16(data, currentOffset);
+				currentOffset +=1;
+			}
+			else
+				yDelta = 0;//lastY;
         }
 
         yDeltas.emplace_back(yDelta);

@@ -6,45 +6,51 @@
 
 #IncludeRegexTransform: 
 
-/home/jake/NEA/include/CMAPTable.h
+/home/jake/TTFParser/SDL_gfx/SDL2_gfxPrimitives.h
+math.h
+-
+SDL2/SDL.h
+/home/jake/TTFParser/SDL_gfx/SDL2/SDL.h
+
+/home/jake/TTFParser/include/CMAPTable.h
 vector
 -
 cstdint
 -
 Header.h
-/home/jake/NEA/include/Header.h
+/home/jake/TTFParser/include/Header.h
 
-/home/jake/NEA/include/Font.h
+/home/jake/TTFParser/include/Font.h
 string
 -
 vector
 -
 Header.h
-/home/jake/NEA/include/Header.h
+/home/jake/TTFParser/include/Header.h
 HEADTable.h
-/home/jake/NEA/include/HEADTable.h
+/home/jake/TTFParser/include/HEADTable.h
 CMAPTable.h
-/home/jake/NEA/include/CMAPTable.h
+/home/jake/TTFParser/include/CMAPTable.h
 Glyph.h
-/home/jake/NEA/include/Glyph.h
+/home/jake/TTFParser/include/Glyph.h
 
-/home/jake/NEA/include/Glyph.h
+/home/jake/TTFParser/include/Glyph.h
 cstdint
 -
 vector
 -
 Point.h
-/home/jake/NEA/include/Point.h
+/home/jake/TTFParser/include/Point.h
 
-/home/jake/NEA/include/HEADTable.h
+/home/jake/TTFParser/include/HEADTable.h
 vector
 -
 cstdint
 -
 Header.h
-/home/jake/NEA/include/Header.h
+/home/jake/TTFParser/include/Header.h
 
-/home/jake/NEA/include/Header.h
+/home/jake/TTFParser/include/Header.h
 vector
 -
 map
@@ -54,19 +60,19 @@ cstdint
 string
 -
 TableHeader.h
-/home/jake/NEA/include/TableHeader.h
+/home/jake/TTFParser/include/TableHeader.h
 
-/home/jake/NEA/include/Point.h
+/home/jake/TTFParser/include/Point.h
 PointFlag.h
-/home/jake/NEA/include/PointFlag.h
+/home/jake/TTFParser/include/PointFlag.h
 
-/home/jake/NEA/include/PointFlag.h
+/home/jake/TTFParser/include/PointFlag.h
 vector
 -
 cstdint
 -
 
-/home/jake/NEA/include/TableHeader.h
+/home/jake/TTFParser/include/TableHeader.h
 string
 -
 vector
@@ -74,39 +80,13 @@ vector
 cstdint
 -
 
-/home/jake/NEA/include/log.h
-iostream
--
-
-/home/jake/NEA/include/util.h
-cstdint
--
-vector
--
-string
--
-
-/home/jake/NEA/src/Font.cpp
-fstream
--
-filesystem
--
+/home/jake/TTFParser/src/main.cpp
 iostream
 -
 ../include/Font.h
-/home/jake/NEA/include/Font.h
-../include/util.h
-/home/jake/NEA/include/util.h
-../include/log.h
-/home/jake/NEA/include/log.h
-
-/home/jake/NEA/src/Header.cpp
-../include/Header.h
-/home/jake/NEA/include/Header.h
-../include/util.h
-/home/jake/NEA/include/util.h
-../include/log.h
-/home/jake/NEA/include/log.h
-iostream
+/home/jake/TTFParser/include/Font.h
+SDL2/SDL.h
 -
+../SDL_gfx/SDL2_gfxPrimitives.h
+/home/jake/TTFParser/SDL_gfx/SDL2_gfxPrimitives.h
 

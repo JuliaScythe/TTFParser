@@ -5,45 +5,46 @@
 		<Option title="NEA"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\usr\;CMake Files\..\..\..\usr\lib64\;CMake Files\..\..\..\usr\lib64\cmake\;CMake Files\..\..\..\usr\lib64\cmake\SDL2\;"/>
+		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/jake/NEA/cmake-build-debug"/>
+				<Option working_dir="/home/jake/TTFParser/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jake/NEA/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jake/NEA/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jake/NEA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jake/NEA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jake/TTFParser/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jake/TTFParser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jake/TTFParser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jake/TTFParser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/jake/NEA/cmake-build-debug"/>
+				<Option working_dir="/home/jake/TTFParser/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jake/NEA/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jake/NEA/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jake/NEA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jake/NEA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jake/TTFParser/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jake/TTFParser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jake/TTFParser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jake/TTFParser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/jake/NEA/cmake-build-debug"/>
+				<Option working_dir="/home/jake/TTFParser/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jake/NEA/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jake/NEA/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jake/NEA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jake/NEA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jake/TTFParser/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jake/TTFParser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jake/TTFParser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jake/TTFParser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="NEA">
-				<Option output="/home/jake/NEA/cmake-build-debug/NEA" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jake/NEA/cmake-build-debug"/>
+				<Option output="/home/jake/TTFParser/cmake-build-debug/NEA" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jake/TTFParser/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/usr/include/SDL2"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward"/>
@@ -53,19 +54,20 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jake/NEA/cmake-build-debug/Makefile&quot;  VERBOSE=1 NEA"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jake/NEA/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jake/NEA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jake/NEA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jake/TTFParser/cmake-build-debug/Makefile&quot;  VERBOSE=1 NEA"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jake/TTFParser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jake/TTFParser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jake/TTFParser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="NEA/fast">
-				<Option output="/home/jake/NEA/cmake-build-debug/NEA" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jake/NEA/cmake-build-debug"/>
+				<Option output="/home/jake/TTFParser/cmake-build-debug/NEA" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jake/TTFParser/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/usr/include/SDL2"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward"/>
@@ -75,102 +77,93 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jake/NEA/cmake-build-debug/Makefile&quot;  VERBOSE=1 NEA/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jake/NEA/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jake/NEA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jake/NEA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/jake/TTFParser/cmake-build-debug/Makefile&quot;  VERBOSE=1 NEA/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/jake/TTFParser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/jake/TTFParser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/jake/TTFParser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/jake/NEA/SDL_gfx/SDL2_gfxPrimitives.c">
+		<Unit filename="/home/jake/TTFParser/SDL_gfx/SDL2_gfxPrimitives.c">
 			<Option target="NEA"/>
 		</Unit>
-		<Unit filename="/home/jake/NEA/SDL_gfx/SDL2_gfxPrimitives.h">
+		<Unit filename="/home/jake/TTFParser/SDL_gfx/SDL2_gfxPrimitives.h">
 			<Option target="NEA"/>
 		</Unit>
-		<Unit filename="/home/jake/NEA/SDL_gfx/SDL2_rotozoom.c">
+		<Unit filename="/home/jake/TTFParser/SDL_gfx/SDL2_rotozoom.c">
 			<Option target="NEA"/>
 		</Unit>
-		<Unit filename="/home/jake/NEA/SDL_gfx/SDL2_rotozoom.h">
+		<Unit filename="/home/jake/TTFParser/SDL_gfx/SDL2_rotozoom.h">
 			<Option target="NEA"/>
 		</Unit>
-		<Unit filename="/home/jake/NEA/include/CMAPTable.h">
+		<Unit filename="/home/jake/TTFParser/include/CMAPTable.h">
 			<Option target="NEA"/>
 		</Unit>
-		<Unit filename="/home/jake/NEA/include/Font.h">
+		<Unit filename="/home/jake/TTFParser/include/Font.h">
 			<Option target="NEA"/>
 		</Unit>
-		<Unit filename="/home/jake/NEA/include/Glyph.h">
+		<Unit filename="/home/jake/TTFParser/include/Glyph.h">
 			<Option target="NEA"/>
 		</Unit>
-		<Unit filename="/home/jake/NEA/include/HEADTable.h">
+		<Unit filename="/home/jake/TTFParser/include/HEADTable.h">
 			<Option target="NEA"/>
 		</Unit>
-		<Unit filename="/home/jake/NEA/include/Header.h">
+		<Unit filename="/home/jake/TTFParser/include/Header.h">
 			<Option target="NEA"/>
 		</Unit>
-		<Unit filename="/home/jake/NEA/include/Point.h">
+		<Unit filename="/home/jake/TTFParser/include/Point.h">
 			<Option target="NEA"/>
 		</Unit>
-		<Unit filename="/home/jake/NEA/include/PointFlag.cpp">
+		<Unit filename="/home/jake/TTFParser/include/PointFlag.cpp">
 			<Option target="NEA"/>
 		</Unit>
-		<Unit filename="/home/jake/NEA/include/PointFlag.h">
+		<Unit filename="/home/jake/TTFParser/include/PointFlag.h">
 			<Option target="NEA"/>
 		</Unit>
-		<Unit filename="/home/jake/NEA/include/TableHeader.h">
+		<Unit filename="/home/jake/TTFParser/include/TableHeader.h">
 			<Option target="NEA"/>
 		</Unit>
-		<Unit filename="/home/jake/NEA/include/log.h">
+		<Unit filename="/home/jake/TTFParser/include/log.h">
 			<Option target="NEA"/>
 		</Unit>
-		<Unit filename="/home/jake/NEA/include/util.h">
+		<Unit filename="/home/jake/TTFParser/include/util.h">
 			<Option target="NEA"/>
 		</Unit>
-		<Unit filename="/home/jake/NEA/src/CMAPTable.cpp">
+		<Unit filename="/home/jake/TTFParser/src/CMAPTable.cpp">
 			<Option target="NEA"/>
 		</Unit>
-		<Unit filename="/home/jake/NEA/src/Font.cpp">
+		<Unit filename="/home/jake/TTFParser/src/Font.cpp">
 			<Option target="NEA"/>
 		</Unit>
-		<Unit filename="/home/jake/NEA/src/Glyph.cpp">
+		<Unit filename="/home/jake/TTFParser/src/Glyph.cpp">
 			<Option target="NEA"/>
 		</Unit>
-		<Unit filename="/home/jake/NEA/src/HEADTable.cpp">
+		<Unit filename="/home/jake/TTFParser/src/HEADTable.cpp">
 			<Option target="NEA"/>
 		</Unit>
-		<Unit filename="/home/jake/NEA/src/Header.cpp">
+		<Unit filename="/home/jake/TTFParser/src/Header.cpp">
 			<Option target="NEA"/>
 		</Unit>
-		<Unit filename="/home/jake/NEA/src/Point.cpp">
+		<Unit filename="/home/jake/TTFParser/src/Point.cpp">
 			<Option target="NEA"/>
 		</Unit>
-		<Unit filename="/home/jake/NEA/src/TableHeader.cpp">
+		<Unit filename="/home/jake/TTFParser/src/TableHeader.cpp">
 			<Option target="NEA"/>
 		</Unit>
-		<Unit filename="/home/jake/NEA/src/log.cpp">
+		<Unit filename="/home/jake/TTFParser/src/log.cpp">
 			<Option target="NEA"/>
 		</Unit>
-		<Unit filename="/home/jake/NEA/src/main.cpp">
+		<Unit filename="/home/jake/TTFParser/src/main.cpp">
 			<Option target="NEA"/>
 		</Unit>
-		<Unit filename="/home/jake/NEA/src/util.cpp">
+		<Unit filename="/home/jake/TTFParser/src/util.cpp">
 			<Option target="NEA"/>
 		</Unit>
-		<Unit filename="/home/jake/NEA/CMakeLists.txt">
+		<Unit filename="/home/jake/TTFParser/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/jake/NEA/../../../usr/lib64/cmake/SDL2/SDL2Config.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\usr\lib64\cmake\SDL2\"/>
-		</Unit>
-		<Unit filename="/home/jake/NEA/../../../usr/lib64/cmake/SDL2/SDL2ConfigVersion.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\usr\lib64\cmake\SDL2\"/>
-		</Unit>
-		<Unit filename="/home/jake/NEA/../../../usr/lib64/cmake/SDL2/SDL2Targets-noconfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\usr\lib64\cmake\SDL2\"/>
-		</Unit>
-		<Unit filename="/home/jake/NEA/../../../usr/lib64/cmake/SDL2/SDL2Targets.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\usr\lib64\cmake\SDL2\"/>
+		<Unit filename="/home/jake/TTFParser/FindSDL2.cmake">
+			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

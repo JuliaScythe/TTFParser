@@ -64,10 +64,10 @@ RM = /home/jake/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.5981.166/bin/
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jake/NEA
+CMAKE_SOURCE_DIR = /home/jake/TTFParser
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jake/NEA/cmake-build-debug
+CMAKE_BINARY_DIR = /home/jake/TTFParser/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -94,14 +94,14 @@ clean: CMakeFiles/NEA.dir/clean
 CMakeFiles/NEA.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NEA.dir/build.make CMakeFiles/NEA.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NEA.dir/build.make CMakeFiles/NEA.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jake/NEA/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14 "Built target NEA"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jake/TTFParser/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14 "Built target NEA"
 .PHONY : CMakeFiles/NEA.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/NEA.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jake/NEA/cmake-build-debug/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jake/TTFParser/cmake-build-debug/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/NEA.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jake/NEA/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jake/TTFParser/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/NEA.dir/rule
 
 # Convenience name for target.

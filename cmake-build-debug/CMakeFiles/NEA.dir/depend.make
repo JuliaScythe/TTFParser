@@ -33,12 +33,14 @@ CMakeFiles/NEA.dir/src/Font.cpp.o: ../src/Font.cpp
 CMakeFiles/NEA.dir/src/Glyph.cpp.o: ../include/Glyph.h
 CMakeFiles/NEA.dir/src/Glyph.cpp.o: ../include/Point.h
 CMakeFiles/NEA.dir/src/Glyph.cpp.o: ../include/PointFlag.h
+CMakeFiles/NEA.dir/src/Glyph.cpp.o: ../include/log.h
 CMakeFiles/NEA.dir/src/Glyph.cpp.o: ../include/util.h
 CMakeFiles/NEA.dir/src/Glyph.cpp.o: ../src/Glyph.cpp
 
 CMakeFiles/NEA.dir/src/HEADTable.cpp.o: ../include/HEADTable.h
 CMakeFiles/NEA.dir/src/HEADTable.cpp.o: ../include/Header.h
 CMakeFiles/NEA.dir/src/HEADTable.cpp.o: ../include/TableHeader.h
+CMakeFiles/NEA.dir/src/HEADTable.cpp.o: ../include/log.h
 CMakeFiles/NEA.dir/src/HEADTable.cpp.o: ../include/util.h
 CMakeFiles/NEA.dir/src/HEADTable.cpp.o: ../src/HEADTable.cpp
 

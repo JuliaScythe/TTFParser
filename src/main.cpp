@@ -42,7 +42,7 @@ int main() {
     SDL_RenderPresent(renderer);
 
     // Render the font
-    char characterToDraw = 'I';
+    char characterToDraw = 'A';
 
     std::string filename = "Roboto.TTF";
     Font font = Font(filename, characterToDraw);
@@ -70,12 +70,19 @@ void drawFont(Font font, SDL_Renderer* renderer) {
     double locX = 300;
     double locY = 300;
 
+    double lastX = locX;
+    double lastY = locY;
+
     // For each point of the font...
     for(auto point : font.glyph.points) {
-        if(point.flag.onCurvePoint)
-            aacircleRGBA(renderer, locX, locY, 5, 0, 0, 0, 255);
-        locX += point.deltaX / 100;
-        locY += point.deltaY / 100;
+        if(point.flag.onCurvePoint) {
+			aacircleRGBA(renderer, locX, locY, 5, 0, 0, 0, 255);
+			aalineRGBA(renderer, locX, locY, lastX, lastY, 0, 0, 0, 255);
+			lastX = locX;
+			lastY = locY;
+		}
+        locX += point.deltaX / 10;
+        locY -= point.deltaY / 10;
 
     }
 

@@ -48,6 +48,7 @@ std::pair<uint32_t, uint32_t> getGlyphOffset(std::vector<uint8_t> *data, Header 
     // Find the offset of the loca table
     uint32_t offset = header.tables["loca"].tableOffset;
 
+    info("Glyph Index: ", std::to_string(glyphIndex));
 
     // Find the number of glyphs in the font
     // uint16_t numGlyphs = parseu16(data, header.tables["maxp"].tableOffset+4);
