@@ -11,6 +11,7 @@
 class PointFlag {
 public:
     PointFlag();
+    explicit PointFlag(uint8_t flagByte);
     PointFlag(std::vector<uint8_t>* data, uint32_t offset);
 
     bool onCurvePoint;

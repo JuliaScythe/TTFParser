@@ -23,4 +23,17 @@ PointFlag::PointFlag(std::vector<uint8_t> *data, uint32_t offset) {
     }
 }
 
-PointFlag::PointFlag() = default;
+PointFlag::PointFlag(uint8_t flagByte) {
+	onCurvePoint = flagByte & 0b00000001;
+	xShortVector = flagByte & 0b00000010;
+	yShortVector = flagByte & 0b00000100;
+	repeat       = flagByte & 0b00001000;
+	xSame        = flagByte & 0b00010000;
+	ySame        = flagByte & 0b00100000;
+	overlapSimple= flagByte & 0b01000000;
+}
+
+PointFlag::PointFlag() {
+
+}
+
