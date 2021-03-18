@@ -14,7 +14,7 @@ Header::Header(std::vector<uint8_t>* data) {
 
     tables = std::map<std::string, TableHeader>();
 
-    info("⟶ Enumerating tables...", "");
+    info("-> Enumerating tables...", "");
 
     // ok, now time to parse each table
     for (int offset=12; offset < numTables*16+12; offset += 16) {
@@ -24,7 +24,7 @@ Header::Header(std::vector<uint8_t>* data) {
     // Print each table to the screen, because logging is important!
 
     for (auto table : tables) {
-        info("⟶⟶ Found table " + table.first + " @ " + std::to_string(table.second.tableOffset), "");
+        info("->-> Found table " + table.first + " @ " + std::to_string(table.second.tableOffset), "");
     }
 
     // And we're done!

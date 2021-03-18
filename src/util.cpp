@@ -50,7 +50,7 @@ int16_t parse16(std::vector<uint8_t> *data, int offset) {
 
     int16_t result;
     std::memcpy(&result, &val, 2); // Copy two bytes of memory from val -> result
-
     // We need to do this because leftshifting a signed integer is UB and c++ doesn't want to reinterpret it
+
     return result;
 }

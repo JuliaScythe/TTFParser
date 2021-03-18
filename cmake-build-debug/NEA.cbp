@@ -114,9 +114,6 @@
 		<Unit filename="/home/jake/TTFParser/include/Point.h">
 			<Option target="NEA"/>
 		</Unit>
-		<Unit filename="/home/jake/TTFParser/include/PointFlag.cpp">
-			<Option target="NEA"/>
-		</Unit>
 		<Unit filename="/home/jake/TTFParser/include/PointFlag.h">
 			<Option target="NEA"/>
 		</Unit>
@@ -145,6 +142,9 @@
 			<Option target="NEA"/>
 		</Unit>
 		<Unit filename="/home/jake/TTFParser/src/Point.cpp">
+			<Option target="NEA"/>
+		</Unit>
+		<Unit filename="/home/jake/TTFParser/src/PointFlag.cpp">
 			<Option target="NEA"/>
 		</Unit>
 		<Unit filename="/home/jake/TTFParser/src/TableHeader.cpp">

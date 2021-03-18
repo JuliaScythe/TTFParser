@@ -41,12 +41,9 @@ void Glyph::parse(std::vector<uint8_t> *data, uint32_t offset, uint32_t length) 
     // Skip the instructions, they're not used here
     uint32_t dataOffset = instructionLengthOffset + instructionLength;
     uint32_t currentOffset = dataOffset;
-    uint32_t remainingLength = length - (dataOffset - offset);
 
     uint16_t totalPoints = endPointsOfContours.back() + 1;
     uint16_t numberOfPoints = 0;
-    uint16_t numberOfXValues = 0;
-    uint16_t numberOfYValues = 0;
     std::vector<PointFlag> flags = {};
     std::vector<int16_t> xDeltas = {};
     std::vector<int16_t> yDeltas = {};
@@ -62,10 +59,6 @@ void Glyph::parse(std::vector<uint8_t> *data, uint32_t offset, uint32_t length) 
     } // TODO: handle repeating?
 
     currentOffset -= 1;
-
-    int16_t lastX = 0;
-    int16_t lastY = 0;
-
 
     // Parse the X values
     for(auto flag : flags) {
@@ -90,8 +83,6 @@ void Glyph::parse(std::vector<uint8_t> *data, uint32_t offset, uint32_t length) 
 		}
 
         xDeltas.emplace_back(xDelta);
-        // Update lastX
-        lastX = xDelta;
     }
     // This might just be valid!
 
@@ -118,8 +109,6 @@ void Glyph::parse(std::vector<uint8_t> *data, uint32_t offset, uint32_t length) 
         }
 
         yDeltas.emplace_back(yDelta);
-        // Update lastY
-        lastY = yDelta;
     }
 
     for(int i = 0; i < xDeltas.size(); i++) {

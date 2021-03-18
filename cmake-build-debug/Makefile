@@ -58,10 +58,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/jake/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.4961.39/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/jake/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6085.16/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/jake/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.4961.39/bin/cmake/linux/bin/cmake -E rm -f
+RM = /home/jake/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6085.16/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -78,7 +78,7 @@ CMAKE_BINARY_DIR = /home/jake/TTFParser/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/jake/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.4961.39/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/jake/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6085.16/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -89,7 +89,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/jake/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.4961.39/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/jake/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6085.16/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -195,33 +195,6 @@ SDL_gfx/SDL2_rotozoom.s: SDL_gfx/SDL2_rotozoom.c.s
 SDL_gfx/SDL2_rotozoom.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NEA.dir/build.make CMakeFiles/NEA.dir/SDL_gfx/SDL2_rotozoom.c.s
 .PHONY : SDL_gfx/SDL2_rotozoom.c.s
-
-include/PointFlag.o: include/PointFlag.cpp.o
-
-.PHONY : include/PointFlag.o
-
-# target to build an object file
-include/PointFlag.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NEA.dir/build.make CMakeFiles/NEA.dir/include/PointFlag.cpp.o
-.PHONY : include/PointFlag.cpp.o
-
-include/PointFlag.i: include/PointFlag.cpp.i
-
-.PHONY : include/PointFlag.i
-
-# target to preprocess a source file
-include/PointFlag.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NEA.dir/build.make CMakeFiles/NEA.dir/include/PointFlag.cpp.i
-.PHONY : include/PointFlag.cpp.i
-
-include/PointFlag.s: include/PointFlag.cpp.s
-
-.PHONY : include/PointFlag.s
-
-# target to generate assembly for a file
-include/PointFlag.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NEA.dir/build.make CMakeFiles/NEA.dir/include/PointFlag.cpp.s
-.PHONY : include/PointFlag.cpp.s
 
 src/CMAPTable.o: src/CMAPTable.cpp.o
 
@@ -385,6 +358,33 @@ src/Point.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NEA.dir/build.make CMakeFiles/NEA.dir/src/Point.cpp.s
 .PHONY : src/Point.cpp.s
 
+src/PointFlag.o: src/PointFlag.cpp.o
+
+.PHONY : src/PointFlag.o
+
+# target to build an object file
+src/PointFlag.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NEA.dir/build.make CMakeFiles/NEA.dir/src/PointFlag.cpp.o
+.PHONY : src/PointFlag.cpp.o
+
+src/PointFlag.i: src/PointFlag.cpp.i
+
+.PHONY : src/PointFlag.i
+
+# target to preprocess a source file
+src/PointFlag.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NEA.dir/build.make CMakeFiles/NEA.dir/src/PointFlag.cpp.i
+.PHONY : src/PointFlag.cpp.i
+
+src/PointFlag.s: src/PointFlag.cpp.s
+
+.PHONY : src/PointFlag.s
+
+# target to generate assembly for a file
+src/PointFlag.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NEA.dir/build.make CMakeFiles/NEA.dir/src/PointFlag.cpp.s
+.PHONY : src/PointFlag.cpp.s
+
 src/TableHeader.o: src/TableHeader.cpp.o
 
 .PHONY : src/TableHeader.o
@@ -508,9 +508,6 @@ help:
 	@echo "... SDL_gfx/SDL2_rotozoom.o"
 	@echo "... SDL_gfx/SDL2_rotozoom.i"
 	@echo "... SDL_gfx/SDL2_rotozoom.s"
-	@echo "... include/PointFlag.o"
-	@echo "... include/PointFlag.i"
-	@echo "... include/PointFlag.s"
 	@echo "... src/CMAPTable.o"
 	@echo "... src/CMAPTable.i"
 	@echo "... src/CMAPTable.s"
@@ -529,6 +526,9 @@ help:
 	@echo "... src/Point.o"
 	@echo "... src/Point.i"
 	@echo "... src/Point.s"
+	@echo "... src/PointFlag.o"
+	@echo "... src/PointFlag.i"
+	@echo "... src/PointFlag.s"
 	@echo "... src/TableHeader.o"
 	@echo "... src/TableHeader.i"
 	@echo "... src/TableHeader.s"

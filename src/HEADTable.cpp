@@ -10,7 +10,7 @@
 
 void HEADTable::parse(std::vector<uint8_t> *data, int offset, int length) {
 
-    info("⟶ Parsing HEAD table @ ", "");
+    info("-> Parsing HEAD table @ ", "");
 
     // Offset +16: flag word
     flags = parseu16(data, offset+16);

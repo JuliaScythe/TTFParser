@@ -2,7 +2,7 @@
 // Created by jake on 25/11/2020.
 //
 
-#include "PointFlag.h"
+#include "../include/PointFlag.h"
 
 PointFlag::PointFlag(std::vector<uint8_t> *data, uint32_t offset) {
     flagByte = data->at(offset);

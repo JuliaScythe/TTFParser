@@ -53,10 +53,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/jake/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.4961.39/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/jake/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6085.16/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/jake/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.4961.39/bin/cmake/linux/bin/cmake -E rm -f
+RM = /home/jake/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6085.16/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -193,18 +193,18 @@ CMakeFiles/NEA.dir/src/Glyph.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NEA.dir/src/Glyph.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jake/TTFParser/src/Glyph.cpp -o CMakeFiles/NEA.dir/src/Glyph.cpp.s
 
-CMakeFiles/NEA.dir/include/PointFlag.cpp.o: CMakeFiles/NEA.dir/flags.make
-CMakeFiles/NEA.dir/include/PointFlag.cpp.o: ../include/PointFlag.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jake/TTFParser/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/NEA.dir/include/PointFlag.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/NEA.dir/include/PointFlag.cpp.o -c /home/jake/TTFParser/include/PointFlag.cpp
+CMakeFiles/NEA.dir/src/PointFlag.cpp.o: CMakeFiles/NEA.dir/flags.make
+CMakeFiles/NEA.dir/src/PointFlag.cpp.o: ../src/PointFlag.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jake/TTFParser/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/NEA.dir/src/PointFlag.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/NEA.dir/src/PointFlag.cpp.o -c /home/jake/TTFParser/src/PointFlag.cpp
 
-CMakeFiles/NEA.dir/include/PointFlag.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NEA.dir/include/PointFlag.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jake/TTFParser/include/PointFlag.cpp > CMakeFiles/NEA.dir/include/PointFlag.cpp.i
+CMakeFiles/NEA.dir/src/PointFlag.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NEA.dir/src/PointFlag.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jake/TTFParser/src/PointFlag.cpp > CMakeFiles/NEA.dir/src/PointFlag.cpp.i
 
-CMakeFiles/NEA.dir/include/PointFlag.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NEA.dir/include/PointFlag.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jake/TTFParser/include/PointFlag.cpp -o CMakeFiles/NEA.dir/include/PointFlag.cpp.s
+CMakeFiles/NEA.dir/src/PointFlag.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NEA.dir/src/PointFlag.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jake/TTFParser/src/PointFlag.cpp -o CMakeFiles/NEA.dir/src/PointFlag.cpp.s
 
 CMakeFiles/NEA.dir/src/Point.cpp.o: CMakeFiles/NEA.dir/flags.make
 CMakeFiles/NEA.dir/src/Point.cpp.o: ../src/Point.cpp
@@ -256,7 +256,7 @@ NEA_OBJECTS = \
 "CMakeFiles/NEA.dir/src/HEADTable.cpp.o" \
 "CMakeFiles/NEA.dir/src/CMAPTable.cpp.o" \
 "CMakeFiles/NEA.dir/src/Glyph.cpp.o" \
-"CMakeFiles/NEA.dir/include/PointFlag.cpp.o" \
+"CMakeFiles/NEA.dir/src/PointFlag.cpp.o" \
 "CMakeFiles/NEA.dir/src/Point.cpp.o" \
 "CMakeFiles/NEA.dir/SDL_gfx/SDL2_rotozoom.c.o" \
 "CMakeFiles/NEA.dir/src/log.cpp.o"
@@ -273,7 +273,7 @@ NEA: CMakeFiles/NEA.dir/src/TableHeader.cpp.o
 NEA: CMakeFiles/NEA.dir/src/HEADTable.cpp.o
 NEA: CMakeFiles/NEA.dir/src/CMAPTable.cpp.o
 NEA: CMakeFiles/NEA.dir/src/Glyph.cpp.o
-NEA: CMakeFiles/NEA.dir/include/PointFlag.cpp.o
+NEA: CMakeFiles/NEA.dir/src/PointFlag.cpp.o
 NEA: CMakeFiles/NEA.dir/src/Point.cpp.o
 NEA: CMakeFiles/NEA.dir/SDL_gfx/SDL2_rotozoom.c.o
 NEA: CMakeFiles/NEA.dir/src/log.cpp.o

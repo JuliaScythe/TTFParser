@@ -1,5 +1,5 @@
 //
-// Created by bleh on 14/12/2020.
+// Created by jake on 14/12/2020.
 //
 
 #include "../include/log.h"
