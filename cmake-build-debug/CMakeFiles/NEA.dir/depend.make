@@ -9,9 +9,6 @@ CMakeFiles/NEA.dir/SDL_gfx/SDL2_gfxPrimitives.c.o: ../SDL_gfx/SDL2_rotozoom.h
 CMakeFiles/NEA.dir/SDL_gfx/SDL2_rotozoom.c.o: ../SDL_gfx/SDL2_rotozoom.c
 CMakeFiles/NEA.dir/SDL_gfx/SDL2_rotozoom.c.o: ../SDL_gfx/SDL2_rotozoom.h
 
-CMakeFiles/NEA.dir/include/PointFlag.cpp.o: ../include/PointFlag.cpp
-CMakeFiles/NEA.dir/include/PointFlag.cpp.o: ../include/PointFlag.h
-
 CMakeFiles/NEA.dir/src/CMAPTable.cpp.o: ../include/CMAPTable.h
 CMakeFiles/NEA.dir/src/CMAPTable.cpp.o: ../include/Header.h
 CMakeFiles/NEA.dir/src/CMAPTable.cpp.o: ../include/TableHeader.h
@@ -53,6 +50,9 @@ CMakeFiles/NEA.dir/src/Header.cpp.o: ../src/Header.cpp
 CMakeFiles/NEA.dir/src/Point.cpp.o: ../include/Point.h
 CMakeFiles/NEA.dir/src/Point.cpp.o: ../include/PointFlag.h
 CMakeFiles/NEA.dir/src/Point.cpp.o: ../src/Point.cpp
+
+CMakeFiles/NEA.dir/src/PointFlag.cpp.o: ../include/PointFlag.h
+CMakeFiles/NEA.dir/src/PointFlag.cpp.o: ../src/PointFlag.cpp
 
 CMakeFiles/NEA.dir/src/TableHeader.cpp.o: ../include/TableHeader.h
 CMakeFiles/NEA.dir/src/TableHeader.cpp.o: ../include/util.h

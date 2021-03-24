@@ -1,5 +1,5 @@
-/home/jake/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6085.16/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/jake/TTFParser
-CMake Warning (dev) at /home/jake/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6085.16/bin/cmake/linux/share/cmake-3.19/Modules/FindPackageHandleStandardArgs.cmake:426 (message):
+/home/jake/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6556.10/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/jake/TTFParser
+CMake Warning (dev) at /home/jake/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6556.10/bin/cmake/linux/share/cmake-3.19/Modules/FindPackageHandleStandardArgs.cmake:426 (message):
   The package name passed to `find_package_handle_standard_args` (SDL2main)
   does not match the name of the calling package (SDL2).  This can lead to
   problems in calling code that expects `find_package` result variables
