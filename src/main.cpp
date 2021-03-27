@@ -45,6 +45,10 @@ int main() {
 
         drawFont(font, renderer);  // Render our font to the buffer
 		SDL_RenderPresent(renderer);	// Show the buffer on the screen
+
+		// BENCHMARKING
+		quit=true;
+
 		SDL_StartTextInput();
 		SDL_Event ev;
 		while (SDL_PollEvent(&ev)) {

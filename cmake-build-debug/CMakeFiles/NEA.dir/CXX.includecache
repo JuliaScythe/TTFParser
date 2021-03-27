@@ -80,20 +80,6 @@ vector
 cstdint
 -
 
-/home/jake/TTFParser/include/util.h
-cstdint
--
-vector
--
-string
--
-
-/home/jake/TTFParser/src/CMAPTable.cpp
-../include/CMAPTable.h
-/home/jake/TTFParser/include/CMAPTable.h
-../include/util.h
-/home/jake/TTFParser/include/util.h
-
 /home/jake/TTFParser/src/main.cpp
 iostream
 -

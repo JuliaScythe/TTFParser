@@ -14,6 +14,12 @@ Header::Header(std::vector<uint8_t>* data) {
 
     tables = std::map<std::string, TableHeader>();
 
+
+    if(fontType != 65536) {
+        info("Error: This does not appear to be a TTF file", "");
+        std::abort();
+    }
+
     info("-> Enumerating tables...", "");
 
     // ok, now time to parse each table

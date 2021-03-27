@@ -17,7 +17,14 @@ Font::Font(std::string filename, char characterToGet) : filename(filename), char
 
 void Font::readFont(std::string filename) {
 
+
     std::ifstream file = std::ifstream(filename, std::ios::in | std::ios::binary);
+    // Check if the file opened successfully
+    if (file.fail()) {
+        info("Error: Could not open font file!", "");
+        std::abort();
+    }
+
     std::filesystem::path path = std::filesystem::path(filename);
     fileLength = std::filesystem::file_size(path);
     data = new std::vector<uint8_t>((std::istreambuf_iterator<char>(file)), std::istreambuf_iterator<char>());

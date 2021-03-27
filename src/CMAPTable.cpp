@@ -4,6 +4,7 @@
 
 #include "../include/CMAPTable.h"
 #include "../include/util.h"
+#include <iostream>
 
 CMAPTable::CMAPTable() {
 
@@ -112,6 +113,7 @@ void CMAPTable::parseSubtableType4(std::vector<uint8_t> *data, int offset, char 
     }
 
     if (idRangeOffset != 0) {
+        std::cout << "Error: This font uses a nonzero idRangeOffset, which is not supported yet." << std::endl;
         std::abort();
     }
 
